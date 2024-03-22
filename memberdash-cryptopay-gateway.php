@@ -53,25 +53,13 @@ add_action('plugins_loaded', function (): void {
     load_plugin_textdomain('md-cryptopay', false, basename(__DIR__) . '/languages');
 
     if (!defined('MEMBERDASH_VERSION')) {
-        add_action('admin_notices', function (): void {
-            ?>
-                <div class="notice notice-error">
-                    <p><?php echo sprintf(esc_html__('MemberDash - CryptoPay Gateway: This plugin requires MemberDash to work. You can buy MemberDash by %s.', 'md-cryptopay'), '<a href="https://www.learndash.com/memberdash-plugin/" target="_blank">' . esc_html__('clicking here', 'md-cryptopay') . '</a>'); ?></p>
-                </div>
-            <?php
-        });
+        Helpers::requirePluginMessage('MemberDash', 'https://www.learndash.com/memberdash-plugin/', false);
         return;
     }
 
     if (Helpers::bothExists()) {
         new BeycanPress\CryptoPay\MemberDash\Loader();
     } else {
-        add_action('admin_notices', function (): void {
-            ?>
-                <div class="notice notice-error">
-                    <p><?php echo sprintf(esc_html__('MemberDash - CryptoPay Gateway: This plugin is an extra feature plugin so it cannot do anything on its own. It needs CryptoPay to work. You can buy CryptoPay by %s.', 'md-cryptopay'), '<a href="https://beycanpress.com/product/cryptopay-all-in-one-cryptocurrency-payments-for-wordpress/?utm_source=wp_org_addons&utm_medium=memberdash" target="_blank">' . esc_html__('clicking here', 'md-cryptopay') . '</a>'); ?></p>
-                </div>
-            <?php
-        });
+        Helpers::requireCryptoPayMessage('MemberDash');
     }
 });

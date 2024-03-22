@@ -104,8 +104,7 @@ class MS_Gateway_CryptoPay_Lite_View_Button extends \MS_View
         ?>
             <tr class="<?php echo esc_attr($rowClass); ?>">
                 <td class="ms-buy-now-column" colspan="2">
-                    <?php echo $paymentButton;
-                    ?>
+                    <?php Helpers::ksesEcho($paymentButton); ?>
                 </td>
             </tr>
         <?php

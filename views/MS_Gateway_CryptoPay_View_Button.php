@@ -60,11 +60,9 @@ class MS_Gateway_CryptoPay_View_Button extends \MS_View
             $this
         );
 
-        // Cp modal css
-        Helpers::addStyle('main.min.css');
-
-        Hook::addFilter('theme', function () use ($gateway) {
-            return $gateway->theme ?? 'light';
+        Hook::addFilter('theme', function (array $theme) use ($gateway) {
+            $theme['mode'] = isset($gateway->theme) ? $gateway->theme : 'light';
+            return $theme;
         });
         
         Hook::addFilter('lang', function(array $lang) {

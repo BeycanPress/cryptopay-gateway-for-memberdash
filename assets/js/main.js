@@ -1,11 +1,11 @@
 ;(($) => {
     $(document).ready(() => {
-        if (window.CryptoPayModal) {
-            $(document).on('click', '#mb-cryptopay-start', CryptoPayModal.open);
+        if (window.CryptoPayApp) {
+            $(document).on('click', '#mb-cryptopay-start', CryptoPayApp.modal.open);
         }
 
-        if (window.CryptoPayLiteModal) {
-            $(document).on('click', '#mb-cryptopay-lite-start', CryptoPayLiteModal.open);
+        if (window.CryptoPayLiteApp) {
+            $(document).on('click', '#mb-cryptopay-lite-start', CryptoPayLiteApp.modal.open);
         }
     });
 })(jQuery);

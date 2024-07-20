@@ -19,9 +19,9 @@ defined('ABSPATH') || exit;
  * License:     GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: md-cryptopay
- * Tags: Cryptopay, Cryptocurrency, WooCommerce, WordPress, MetaMask, Trust, Binance, Wallet, Ethereum, Bitcoin, Binance smart chain, Payment, Plugin, Gateway, Moralis, Converter, API, coin market cap, CMC
+ * Tags: Bitcoin, Ethereum, Cryptocurrency, Payments, MemberDash
  * Requires at least: 5.0
- * Tested up to: 6.5.0
+ * Tested up to: 6.6
  * Requires PHP: 8.1
 */
 
@@ -54,10 +54,7 @@ add_action('plugins_loaded', function (): void {
 
     if (!defined('MEMBERDASH_VERSION')) {
         Helpers::requirePluginMessage('MemberDash', 'https://www.learndash.com/memberdash-plugin/', false);
-        return;
-    }
-
-    if (Helpers::bothExists()) {
+    } elseif (Helpers::bothExists()) {
         new BeycanPress\CryptoPay\MemberDash\Loader();
     } else {
         Helpers::requireCryptoPayMessage('MemberDash');

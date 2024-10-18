@@ -56,11 +56,11 @@ class MS_Gateway_CryptoPay_Lite_View_Settings extends \MS_View
             'theme' => array(
                 'id'            => 'theme',
                 'type'          => \MS_Helper_Html::INPUT_TYPE_SELECT,
-                'title'         => __('Theme', 'md-cryptopay'),
+                'title'         => __('Theme', 'cryptopay-gateway-for-memberdash'),
                 'value'         => $gateway->theme ?? 'light',
                 'field_options' => array(
-                    'light' => __('Light', 'md-cryptopay'),
-                    'dark'  => __('Dark', 'md-cryptopay'),
+                    'light' => __('Light', 'cryptopay-gateway-for-memberdash'),
+                    'dark'  => __('Dark', 'cryptopay-gateway-for-memberdash'),
                 ),
                 'class'         => 'ms-text-large',
                 'ajax_data'     => array(1),

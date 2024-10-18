@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
  * Author URI:  https://beycanpress.com
  * License:     GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: md-cryptopay
+ * Text Domain: cryptopay-gateway-for-memberdash
  * Tags: Bitcoin, Ethereum, Cryptocurrency, Payments, MemberDash
  * Requires at least: 5.0
  * Tested up to: 6.6
@@ -50,7 +50,7 @@ add_action('plugins_loaded', function (): void {
 
     memberdash_cryptopay_addModels();
 
-    load_plugin_textdomain('md-cryptopay', false, basename(__DIR__) . '/languages');
+    load_plugin_textdomain('cryptopay-gateway-for-memberdash', false, basename(__DIR__) . '/languages');
 
     if (!defined('MEMBERDASH_VERSION')) {
         Helpers::requirePluginMessage('MemberDash', 'https://www.learndash.com/memberdash-plugin/', false);

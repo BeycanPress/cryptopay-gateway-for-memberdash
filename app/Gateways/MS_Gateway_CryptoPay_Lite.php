@@ -85,8 +85,8 @@ class MS_Gateway_CryptoPay_Lite extends \MS_Gateway
 
         $this->id             = self::ID;
         $this->group          = 'cryptopay';
-        $this->name           = __('CryptoPay Lite', 'md-cryptopay');
-        $this->description    = __('Cryptocurrency payments', 'md-cryptopay');
+        $this->name           = __('CryptoPay Lite', 'cryptopay-gateway-for-memberdash');
+        $this->description    = __('Cryptocurrency payments', 'cryptopay-gateway-for-memberdash');
 
         $this->manual_payment = true;
         $this->pro_rate       = true;

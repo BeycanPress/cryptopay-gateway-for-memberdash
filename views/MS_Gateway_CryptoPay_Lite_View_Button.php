@@ -67,7 +67,7 @@ class MS_Gateway_CryptoPay_Lite_View_Button extends \MS_View
         
         Hook::addFilter('lang', function(array $lang) {
             return array_merge($lang, [
-                'orderId' => __('Invoice ID:', 'md-cryptopay'),
+                'orderId' => __('Invoice ID:', 'cryptopay-gateway-for-memberdash'),
             ]);
         });
 
@@ -155,7 +155,7 @@ class MS_Gateway_CryptoPay_Lite_View_Button extends \MS_View
             'button' => array(
                 'id'    => 'mb-cryptopay-lite-start',
                 'type'  => MS_Helper_Html::INPUT_TYPE_BUTTON,
-                'value' => esc_html__('CryptoPay Lite', 'md-cryptopay'),
+                'value' => esc_html__('CryptoPay Lite', 'cryptopay-gateway-for-memberdash'),
             )
         );
 

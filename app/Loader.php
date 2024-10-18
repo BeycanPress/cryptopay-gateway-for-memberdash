@@ -18,7 +18,7 @@ class Loader
 
         Helpers::registerIntegration('memberdash');
         Helpers::createTransactionPage(
-            esc_html__('MemberDash transactions', 'md-cryptopay'),
+            esc_html__('MemberDash transactions', 'cryptopay-gateway-for-memberdash'),
             'memberdash',
         );
 
@@ -38,7 +38,7 @@ class Loader
         $subscription = \MS_Model_Relationship::get_subscription($userId, $membershipId);
 
         if (!$subscription) {
-            Helpers::response('error', esc_html__('Subscription not found', 'md-cryptopay'));
+            Helpers::response('error', esc_html__('Subscription not found', 'cryptopay-gateway-for-memberdash'));
         }
 
         return $subscription;
@@ -70,7 +70,7 @@ class Loader
         $subscription = $this->getSubscription($userId, $membershipId);
         $invoice = \MS_Factory::load('MS_Model_Invoice', $data->getOrder()->getId());
 
-        $invoice->add_notes($note = esc_html__('Payment successful!', 'md-cryptopay'));
+        $invoice->add_notes($note = esc_html__('Payment successful!', 'cryptopay-gateway-for-memberdash'));
 
         $invoice->pay_it($gateway, $data->getHash());
 

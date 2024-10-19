@@ -7,6 +7,10 @@ declare(strict_types=1);
 
 use BeycanPress\CryptoPay\Helpers;
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 require_once MD_CRYPTOPAY_DIR . 'views/MS_Gateway_CryptoPay_View_Button.php';
 require_once MD_CRYPTOPAY_DIR . 'views/MS_Gateway_CryptoPay_View_Settings.php';
 

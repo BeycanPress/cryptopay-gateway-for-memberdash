@@ -2,7 +2,7 @@
 Contributors: BeycanPress
 Tags: Bitcoin, Ethereum, Cryptocurrency, Payments, MemberDash
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.7.1
 Requires PHP: 8.1
 Stable Tag: 1.0.0
 Version: 1.0.0
@@ -15,20 +15,25 @@ Cryptocurrency Payment Gateway for MemberDash, Cryptocurrency payments for WordP
 
 ### Cryptocurrency Payment Gateway for MemberDash by CryptoPay
 
-First of all, we would like to point out that this plugin is not a standalone plugin. This plugin is a **<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=cryptopay_memberdash">cryptocurrency payment gateway for MemberDash</a>**. In other words, users who want to sell courses with cryptocurrency payments can use WordPress and MemberDash. However, this plugin is a plugin for CryptoPay and a cryptocurrency payment gateway for MemberDash. So it's actually CryptoPay, which is the main plugin that handles cryptocurrency payments for WordPress. Therefore, users must have both plugins.
+It looks like you're looking for a plugin to accept cryptocurrency payments on MemberDash. What if we told you that you have come to the right place for this?
 
-Thanks to this plugin, you can receive **<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=cryptopay_memberdash">cryptocurrency payments</a>** from many Blockchain networks, especially Bitcoin, Ethereum, Solana, and sell paid courses with cryptocurrencies on your WordPress site with the MemberDash plugin.
+Our product called CryptoPay is a wonderful plugin developed entirely for the WordPress ecosystem that allows you to receive peer-to-peer and commission-free cryptocurrency payments.
 
-What is CryptoPay?
+This integration add-on allows you to use CryptoPay with MemberDash and sell your MemberDash memberships completely commission-free and with peer-to-peer cryptocurrency payments.
+
+#### What is CryptoPay?
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3vaoFL4XG10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Review CryptoPay Lite: **<a href="https://wordpress.org/plugins/cryptopay-wc-lite/">Cryptocurrency payment gateway for MemberDash</a>**
+#### This plugin is an integration plugin. So basically you need to have the following two plugins.
 
-Review CryptoPay Premium: **<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=cryptopay_memberdash">Cryptocurrency payments for WooCommerce</a>**
+**<a href="https://wordpress.org/plugins/cryptopay-wc-lite/">Review CryptoPay Lite</a>**
 
-Review MemberDash: **<a href="https://www.learndash.com/memberdash-plugin/">MemberDash</a>**
+**<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=cryptopay_memberdash">Review CryptoPay Premium</a>**
 
-See **<a href="https://cryptopay.beycanpress.net/" target="_blank">Demo</a>**
+**<a href="https://memberdashwp.com/pricing/">Review MemberDash</a>**
+
+See CryptoPay Demo **<a href="https://cryptopay.beycanpress.net/" target="_blank">Demo</a>**
 
 = Privacy notices =
 
@@ -41,6 +46,12 @@ With the default configuration, this plugin, in itself, does not:
 = Translations =
 
 You can easily translate with Loco translate.
+
+== Screenshots ==
+
+1. Screen shot 1
+2. Screen shot 2
+3. Screen shot 3
 
 == Installation ==
 

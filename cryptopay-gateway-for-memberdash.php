@@ -21,7 +21,7 @@ defined('ABSPATH') || exit;
  * Text Domain: cryptopay-gateway-for-memberdash
  * Tags: Bitcoin, Ethereum, Cryptocurrency, Payments, MemberDash
  * Requires at least: 5.0
- * Tested up to: 6.6
+ * Tested up to: 6.7.1
  * Requires PHP: 8.1
 */
 

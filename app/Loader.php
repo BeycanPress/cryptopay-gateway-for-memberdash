@@ -128,7 +128,7 @@ class Loader
             );
         }
 
-        if (Helpers::exists()) {
+        if (Helpers::liteExists()) {
             require_once MD_CRYPTOPAY_DIR . 'app/Gateways/MS_Gateway_CryptoPay_Lite.php';
             $api->register_payment_gateway(
                 \MS_Gateway_CryptoPay_Lite::ID,

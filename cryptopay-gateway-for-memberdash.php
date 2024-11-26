@@ -11,7 +11,7 @@ defined('ABSPATH') || exit;
 
 /**
  * Plugin Name: CryptoPay Gateway for MemberDash
- * Version:     1.0.0
+ * Version:     1.0.1
  * Plugin URI:  https://beycanpress.com/cryptopay/
  * Description: Adds Cryptocurrency payment gateway (CryptoPay) for MemberDash.
  * Author:      BeycanPress LLC
@@ -31,7 +31,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 use BeycanPress\CryptoPay\Integrator\Helpers;
 
 define('MD_CRYPTOPAY_FILE', __FILE__);
-define('MD_CRYPTOPAY_VERSION', '1.0.0');
+define('MD_CRYPTOPAY_VERSION', '1.0.1');
 define('MD_CRYPTOPAY_URL', plugin_dir_url(__FILE__));
 define('MD_CRYPTOPAY_DIR', plugin_dir_path(__FILE__));
 

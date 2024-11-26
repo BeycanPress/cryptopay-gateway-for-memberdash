@@ -4,8 +4,8 @@ Tags: Bitcoin, Ethereum, Cryptocurrency, Payments, MemberDash
 Requires at least: 5.0
 Tested up to: 6.7.1
 Requires PHP: 8.1
-Stable Tag: 1.0.0
-Version: 1.0.0
+Stable Tag: 1.0.1
+Version: 1.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 

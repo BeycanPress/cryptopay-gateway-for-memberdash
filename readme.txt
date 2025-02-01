@@ -33,7 +33,7 @@ This integration add-on allows you to use CryptoPay with MemberDash and sell you
 
 **<a href="https://memberdashwp.com/pricing/">Review MemberDash</a>**
 
-See CryptoPay Demo **<a href="https://cryptopay.beycanpress.net/" target="_blank">Demo</a>**
+**<a href="https://cryptopay.beycanpress.net/" target="_blank">See CryptoPay Demo</a>**
 
 = Privacy notices =
 

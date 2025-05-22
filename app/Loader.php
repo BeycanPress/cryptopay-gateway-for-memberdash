@@ -17,10 +17,14 @@ class Loader
         add_action('ms_init', [$this, 'registerGateways']);
 
         Helpers::registerIntegration('memberdash');
-        Helpers::createTransactionPage(
-            esc_html__('MemberDash transactions', 'cryptopay-gateway-for-memberdash'),
-            'memberdash',
-        );
+
+        add_action('init', function (): void {
+            Helpers::createTransactionPage(
+                esc_html__('MemberDash transactions', 'cryptopay-gateway-for-memberdash'),
+                'memberdash',
+                9
+            );
+        });
 
         Hook::addFilter('init_memberdash', [$this, 'init']);
         Hook::addAction('payment_finished_memberdash', [$this, 'paymentFinished']);
